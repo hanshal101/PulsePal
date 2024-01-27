@@ -23,5 +23,6 @@ func main() {
 	r.POST("/profile/bets/:betID", internal.EndBet)
 	r.GET("/leadboard/all", internal.WorldLeadBoard)
 	r.GET("/users", internal.AllUsers)
+	r.POST("/profile", internal.ProfileData)
 	r.Run(":9876")
 }
