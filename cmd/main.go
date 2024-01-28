@@ -24,5 +24,6 @@ func main() {
 	r.GET("/leadboard/all", internal.WorldLeadBoard)
 	r.GET("/users", internal.AllUsers)
 	r.POST("/profile", internal.ProfileData)
+	r.GET("/users/:user_id", internal.UserbyID)
 	r.Run(":9876")
 }
